@@ -63,7 +63,7 @@ public class C02BasicOutputMethod {
 		System.out.printf("%-8d %-8s %-8d %-8s\n",4,"동길동",50,"김해");
 		
 		System.out.printf("%-10s %-10s %-10s %-10s\n", "Code","Title","Publisher","Price");
-		System.out.printf("%-10d %-10s %-10s %-10d\n", 1010,"DoItJava","미디어",29000);
+		System.out.printf("%-10d %-10s %-10s %-10d\n", 1010,"DoItJava","00미디어",29000);
 		System.out.printf("%-10d %-10s %-10s %-10d\n", 2020,"윤성우C","오렌지미디어",25000);
 		
 		System.out.printf("%4s\n", "*");
@@ -75,7 +75,6 @@ public class C02BasicOutputMethod {
 		System.out.printf("%4s\n", "*");
 		
 		
-
 	}
 
 }
