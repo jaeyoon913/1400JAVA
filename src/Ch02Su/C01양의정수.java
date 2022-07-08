@@ -1,10 +1,10 @@
-package Ch01;
+package Ch02Su;
 
-public class C03TESTFile {
+public class C01양의정수 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//얍
+
 	}
 
 }
