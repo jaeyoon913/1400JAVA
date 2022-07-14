@@ -79,7 +79,6 @@ public class C01Basic {
 		System.out.print("두번째 수를 입력하시오 : ");
 		int num2 = sc.nextInt();
 		sc.close();
-		
 		System.out.printf("큰 수: %d",(num1>=num2)?num1:num2);
 		
 			
