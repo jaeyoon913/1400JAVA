@@ -132,24 +132,75 @@ public class C02WhileWhile {
 		// *****
 		//  ***
 		//   *
-		int i,j,k;
-		i=0;
-		while(i<4)
+//		int i,j,k;
+//		i=0;
+//		while(i<4)
+//		{
+//			j=0;
+//			while(j<=i-1) 
+//			{
+//				System.out.print(" ");
+//				j++;
+//			}
+//			k=6;
+//			while(k>=2*i)
+//			{
+//				System.out.print("*");
+//				k--;
+//			}
+//			System.out.println();
+//			i++;
+//		}	
+		
+		/*
+		다이아몬드
+		   *
+		  ***
+		 *****
+		*******
+		 *****
+		  ***
+		   *
+		*/
+		
+		int i = 0;
+		int j = 0;
+		int k = 0;
+		
+		while(i<7)
 		{
-			j=0;
-			while(j<=i-1) 
+			if(i<=3)
 			{
-				System.out.print(" ");
-				j++;
+				j=0;
+				while(j<=2-i)
+				{
+					System.out.print(" ");
+					j++;
+				}
+				k=0;
+				while(k<=2*i)
+				{
+					System.out.print("*");
+					k++;
+				}
 			}
-			k=6;
-			while(k>=2*i)
+			else
 			{
-				System.out.print("*");
-				k--;
+				j=0;
+				while(j<=i-4)
+				{
+					System.out.print(" ");
+					j++;
+				}
+				k=0;
+				while(k<=12-2*i)
+				{
+					System.out.print("*");
+					k++;
+				}
 			}
 			System.out.println();
 			i++;
-		}		
+		}
 	}
 }
