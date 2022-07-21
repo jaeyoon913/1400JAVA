@@ -25,7 +25,17 @@ class Rectangle
 	void show()
 	{
 		System.out.println("사각형의 좌표 : ("+x+","+y+")");
-		System.out.println("사각형의 넓이 : "+(width*height));
+		System.out.println("사각형의 넓이 : "+square());
+	}
+	boolean contains(Rectangle r)
+	{
+		if((this.x<r.x && this.y<r.y) && 
+				(this.width+this.x)>(r.width+r.x) && (this.height+this.y)>(r.height+r.y))
+		{
+			return true;
+		}
+		else
+			return false;
 	}
 	
 }
@@ -38,8 +48,8 @@ public class C15PracMain {
 	   
 	   r.show();
 	   System.out.println("s의 면적은 "+s.square());
-//	   if(t.contains(r)) System.out.println("t는 r을 포함합니다.");
-//	   if(t.contains(s)) System.out.println("t는 s를 포함합니다.");
+	   if(t.contains(r)) System.out.println("t는 r을 포함합니다.");
+	   if(t.contains(s)) System.out.println("t는 s를 포함합니다.");
 
 	}
 
